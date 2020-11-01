@@ -8,6 +8,8 @@
 <!--
     Changelog:
     
+    0.2         Added basic structure and text. 
+    
     0.1         inital upload to github.com/DesireCampbell/mindful_time_management.git
 
 -->
@@ -15,9 +17,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mindful Time Management</title>
 </head>
 <body>
-    
+
+    <div>
+        <div class="card">
+            <div>
+                <h1>👍 You've got this week! </h1>
+                <input id="" type="week">
+            </div>
+
+        </div>
+        <div class="card">
+            <input type="text" placeholder="this week I'm grateful for ...">
+        </div>
+        <div class="card clockGrid">
+            <div><!-- clock --> 🙂😕😖😐</div>
+            <div><!-- clock --> 🙂😕😖😐</div>
+            <div><!-- clock --> 🙂😕😖😐</div>
+            <div><!-- clock --> 🙂😕😖😐</div>
+            <div><!-- clock --> 🙂😕😖😐</div>
+            <div><!-- clock --> 🙂😕😖😐</div>
+            <div><!-- clock --> 🙂😕😖😐</div>
+        </div>
+        <div class="mainGrid">
+            <div class="card">
+                
+                <h3>📅 Appointments this week:</h3>
+                <input type="text" placeholder="MON 2pm Phone call with Caren"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+                
+            </div>
+            <div class="card">
+
+                <h3>✅ To do this week:</h3>
+                <!-- if checkbox is checked, disable text input -->
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+                <input type="checkbox" name="" id=""> <input type="text"> <br>
+
+            </div>
+            <div class="card">
+
+                <h3>📝 Notes:</h3>
+                <textarea name="" id=""></textarea>
+
+            </div>
+            <div class="card">
+
+                <div>
+                    <h3>🍴 Meal plan:</h3>
+                    <label for="">🥯 Breakfast:</label><input type="text" name="" id=""><br>
+                    <label for="">🍔 Lunch:</label><input type="text" name="" id=""><br>
+                    <label for="">🥩 Dinner:</label><input type="text" name="" id=""><br>
+                    <label for="">🍎 Snacks:</label><input type="text" name="" id="">
+                </div>
+
+                <div>
+                    <h3>💤 Nights of good sleep: </h3>
+                    <fieldset>
+                        <input type="checkbox" name="chkSleepMon" id="chkSleepMon"><label for="chkSleepMon">MON</label>
+                        <input type="checkbox" name="chkSleepTue" id="chkSleepTue"><label for="chkSleepTue">TUE</label>
+                        <input type="checkbox" name="chkSleepWed" id="chkSleepWed"><label for="chkSleepWed">WED</label>
+                        <input type="checkbox" name="chkSleepThu" id="chkSleepThu"><label for="chkSleepThu">THU</label>
+                        <input type="checkbox" name="chkSleepFri" id="chkSleepFri"><label for="chkSleepFri">FRI</label>
+                        <input type="checkbox" name="chkSleepSat" id="chkSleepSat"><label for="chkSleepSat">SAT</label>
+                        <input type="checkbox" name="chkSleepSun" id="chkSleepSun"><label for="chkSleepSun">SUN</label>
+                    </fieldset>
+                </div>
+
+                <div id="divWaterIntake">
+                    <h3>💧 Water intake</h3>
+                    <label for="rngWaterMon">MON</label> 
+                        <input type="range" list="waterTicks" name="rngWaterMon" id="rngWaterMon" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterMon.value=rngWaterMon.value">
+                        <input type="number" name="" id="numWaterMon"> <br>
+                    <label for="">TUE</label> 
+                        <input type="range" list="waterTicks" name="" id="rngWaterTue" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterTue.value=rngWaterTue.value">
+                        <input type="number" name="" id="numWaterTue"> <br>
+                    <label for="">WED</label> 
+                        <input type="range" list="waterTicks" name="" id="rngWaterWed" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterWed.value=rngWaterWed.value">
+                        <input type="number" name="" id="numWaterWed"> <br>
+                    <label for="">THU</label> 
+                        <input type="range" list="waterTicks" name="" id="rngWaterThu" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterThu.value=rngWaterThu.value">
+                        <input type="number" name="" id="numWaterThu"> <br>
+                    <label for="">FRI</label> 
+                        <input type="range" list="waterTicks" name="" id="rngWaterFri" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterFri.value=rngWaterFri.value">
+                        <input type="number" name="" id="numWaterFri"> <br>
+                    <label for="">SAT</label> 
+                        <input type="range" list="waterTicks" name="" id="rngWaterSat" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterSat.value=rngWaterSat.value">
+                        <input type="number" name="" id="numWaterSat"> <br>
+                    <label for="">SUN</label> 
+                        <input type="range" list="waterTicks" name="" id="rngWaterSun" 
+                        min="0" max="8" value="0"
+                        oninput="numWaterSun.value=rngWaterSun.value">
+                        <input type="number" name="" id="numWaterSun"> 
+
+                    <!-- datalist isn't visible on page, but is used to add tickmarks to water range -->
+                    <datalist id="waterTicks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                    </datalist>
+                </div>
+
+                
+
+            </div>
+        </div>
+        <div class="card">
+            <h2>Health and fitness:</h2>
+            <textarea name="" id=""></textarea>
+
+            <h2>This week's achievements:</h2>
+            <textarea name="" id=""></textarea>
+        </div>
+    </div>
+
+
+    <footer>
+        contact info for AL - copy from previous
+    </footer>
 </body>
 </html>

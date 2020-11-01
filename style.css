@@ -1,0 +1,56 @@
+/*
+    Mindful Time Management
+*/
+
+body{
+    background: lightblue;
+    margin:0;
+    padding:0;
+}
+
+
+.card{
+    background: white;
+    box-shadow: 0 2px 5px 0 black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.clockGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . . . ."
+        ". . . . . . .";
+}
+
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . . . . ."
+    ". . . . . . .";
+}
+
+#divWaterIntake{
+    
+}
+#divWaterIntake input[type="number"]{
+    width: 3ch;
+}
+
+textarea{
+    width: 95%;
+    height: 80%;
+    margin:0;
+    padding:2%;
+}
+
+input[type="text"]{
+    width:100%;
+}
