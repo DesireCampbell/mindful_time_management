@@ -16,6 +16,10 @@ body{
     padding: 10px;
 }
 
+
+
+
+
 .clockGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -25,6 +29,15 @@ body{
         ". . . . . . ."
         ". . . . . . .";
 }
+.clock{
+    height:12vw;
+    width:12vw;
+    margin:0;
+    padding:0;
+    background:lightgreen;
+}
+
+
 
 
 .mainGrid {
@@ -33,16 +46,31 @@ body{
     grid-template-rows: auto auto;
     gap: 0px 0px;
     grid-template-areas:
-    ". . . . . . ."
-    ". . . . . . .";
+        ". . . . . . ."
+        ". . . . . . .";
 }
 
-#divWaterIntake{
-    
+
+#divSleep .grid{
+    display: grid;
+    grid-template-columns: 3ch 5ch;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". .";
 }
-#divWaterIntake input[type="number"]{
-    width: 3ch;
+
+
+#divWaterIntake .grid{
+    display: grid;
+    grid-template-columns: 5ch 1fr 5ch;
+    grid-template-rows: auto auto;
+    gap: 5px 5px;
+    grid-template-areas:
+        ". . .";
 }
+
+
 
 textarea{
     width: 95%;
